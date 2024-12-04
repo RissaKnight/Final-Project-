@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclaimed Creations - Shopping Cart</title>
+    <link rel="stylesheet" href="stylestrial.css"> 
+    <script src="store.js"></script>
+</head>
+<body>
+    <!-- Site Logo and Nav -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Reclaimed Creations" width="100"> 
+        </div>
+        <h1 class="store-name store-name-large">Reclaimed Creations</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Shopping Cart</h1>
+
+        <!-- Cart Items Section -->
+        <!-- <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase"  onclick="redirectToConfirmation()" type="button">PURCHASE</button>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">Shop Our Products</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Necklace</span>
+                    <img class="shop-item-image" src="images/product1.jpg" alt="Handcrafted Necklace">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Necklace', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Cufflinks</span>
+                    <img class="shop-item-image" src="images/product2.jpg" alt="Handcrafted Cufflinks">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Cufflinks', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Ring</span>
+                    <img class="shop-item-image" src="images/product3.jpg" alt="Handcrafted Ring">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Ring', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Cuff</span>
+                    <img class="shop-item-image" src="images/product4.jpg" alt="Handcrafted Cuff">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Cuff', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Necklace Holder</span>
+                    <img class="shop-item-image" src="images/product5.jpg" alt="Handcrafted Necklace Holder">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Necklace Holder', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Bottle Opener</span>
+                    <img class="shop-item-image" src="images/product6.png" alt="Handcrafted Bottle Opener">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Bottle Opener', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Keychain</span>
+                    <img class="shop-item-image" src="images/product7.jpg" alt="Handcrafted Keychain">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Keychain', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Solid Ring</span>
+                    <img class="shop-item-image" src="images/product8.jpg" alt="Handcrafted Solid Ring">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Solid Ring', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Capsule Pendant</span>
+                    <img class="shop-item-image" src="images/product9.jpg" alt="Handcrafted Capsule Pendant">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Capsule Pendant', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Handcrafted Earrings</span>
+                    <img class="shop-item-image" src="images/product10.jpg" alt="Handcrafted Earrings">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$20.00</span>
+                        <button class="btn btn-primary shop-item-button" onclick="addToCart('Handcrafted Earrings', 25.00, 1)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <div class="navbar">
+            <a href="products.html">
+              <h2>Clothing Store</h2>
+            </a>
+        
+            <a href="cart.html">
+              <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+              </div>
+            </a>
+        
+          </div>
+        
+          <div id="label" class="text-center"></div>
+        
+          <div class="shopping-cart" id="shopping-cart"></div>
+
+
+        <footer class="main-footer">
+            <p>&copy; 2024 Reclaimed Creations. All rights reserved.</p>
+        </footer>
+
+    <!-- <script>
+        function redirectToConfirmation() {
+            window.location.href = "confirmation.html";
+        }
+
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.querySelector('.cart-items');
+            let total = 0;
+
+            cartItemsContainer.innerHTML = '';
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                const cartRow = document.createElement('div');
+                cartRow.className = 'cart-row';
+                cartRow.innerHTML = `
+                    <span>${item.name}</span>
+                    <span>$${item.price.toFixed(2)}</span>
+                    <span>
+                        <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${item.id}, this.value)">
+                    </span>
+                    <span>$${itemTotal.toFixed(2)}</span>
+                    <button onclick="removeFromCart(${item.id})">Remove</button>
+                `;
+                cartItemsContainer.appendChild(cartRow);
+            });
+
+            document.getElementById('cart-total').innerText = `$${total.toFixed(2)}`;
+        }
+
+        function updateQuantity(id, quantity) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const item = cart.find(item => item.id === id);
+
+            if (item) {
+                item.quantity = parseInt(quantity, 10);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                loadCart();
+            }
+        }
+
+        function removeFromCart(id) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart = cart.filter(item => item.id !== id);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        function purchaseItems() {
+            alert('Thank you for your purchase!');
+            localStorage.removeItem('cart');
+            loadCart();
+        }
+
+        document.addEventListener('DOMContentLoaded', loadCart);
+    </script> -->
+        <script src="products.js"></script>
+        <script src="cart.js"></script>
+
+</body>
+</html>

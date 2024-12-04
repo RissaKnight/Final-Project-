@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclaimed Creations - Home</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+    <script src="external/js/lightslider.js"></script>
+
+</head>
+<body>
+    <!-- Site Logo and Nav -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Reclaimed Creations" width="100"> 
+        </div>
+        <h1 class="store-name store-name-large">Reclaimed Creations</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html">Shopping Cart</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content-->
+    <main>
+        <h1>Reclaimed Creations</h1>
+
+        <!-- Carousel-->
+        <section class="carousel">
+               
+                    <ul id="lightSlider">
+                        <li class=""><img src="images/product1.jpg" alt="Necklace"></li>
+                        <li class=""><img src="images/product2.jpg" alt="Cuff Links"></li>
+                        <li class=""><img src="images/product3.jpg" alt="Ring"></li>
+                        <li class=""><img src="images/product4.jpg" alt="Cuff"></li>
+                        <li class=""><img src="images/product5.jpg" alt="Necklace Holder"></li>
+                        <li class=""><img src="images/product6.png" alt="Bottle Oppener"></li>
+
+                    </ul>
+                
+        </section>
+
+        <!-- Content Blocks -->
+        <section class="content">
+            <p>At Reclaimed Creations, we breathe new life into used bullet shells, crafting them into functional, beautiful products. 
+                From bottle openers to jewelry, each piece is thoughtfully designed to be a conversation starter and a symbol of sustainability.</p>
+            <p>Explore our range of products made with care, and join us in supporting a circular economy where nothing goes to waste.
+                Each item tells a story and embodies the transformation from impact to inspiration.</p>
+              </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Reclaimed Creations. All rights reserved.</p>
+    </footer>
+    
+    <!-- Scripts for jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#lightSlider").lightSlider({
+                item: 4,
+                loop: true,
+                slideMove: 1,
+                auto: true,
+                pause: 4000,
+                speed: 900,
+                controls: true,
+                pager: false,
+                enableTouch: true
+            });
+        });
+    </script>
+
+</body>
+</html>
